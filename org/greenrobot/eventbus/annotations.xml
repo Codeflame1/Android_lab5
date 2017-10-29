@@ -1,0 +1,5 @@
+<root>
+    <item name='org.greenrobot.eventbus.Subscribe'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+</root>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    tools:context="com.example.asus.lab3.MainActivity">
+
+
+    <TextView
+        android:id="@+id/initial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="#ffffff"
+        android:background="@drawable/shape"
+        android:layout_marginTop = "10dp"
+        android:layout_marginBottom = "10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/initial"
+        android:layout_toRightOf="@id/initial"
+        android:textSize="20sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop = "10dp"
+        android:layout_marginBottom = "10dp"
+        app:layout_constraintLeft_toRightOf="@+id/initial"
+        app:layout_constraintTop_toTopOf="@+id/initial"
+        app:layout_constraintBottom_toBottomOf="@+id/initial" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/initial"
+        android:layout_toRightOf="@id/initial"
+        android:textSize="20sp"
+        android:layout_marginRight="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop = "10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/name"
+        app:layout_constraintBottom_toBottomOf="@+id/name" />
+
+</android.support.constraint.ConstraintLayout>

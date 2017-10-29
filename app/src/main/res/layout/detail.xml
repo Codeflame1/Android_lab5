@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/showdetail"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="right"
+        android:layout_weight="4"
+        android:background="#55848181"
+        android:gravity="center"
+        tools:ignore="RtlHardcoded">
+
+        <ImageView
+            android:id="@+id/goodsimage"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@mipmap/arla"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/back"
+            tools:ignore="ContentDescription" />
+        <ImageButton
+            android:id="@+id/star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/empty_star"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            tools:ignore="ContentDescription" />
+        <TextView
+            android:id="@+id/goodsname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignBottom="@+id/star"
+            android:layout_alignLeft="@+id/back"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp"
+            android:textColor="#000000" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/goodsprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:textColor="#D5000000"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            tools:ignore="RelativeOverlap" />
+
+        <TextView
+            android:id="@+id/goodsmessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#8A000000"
+            android:layout_alignBottom="@+id/line_1"
+            android:layout_alignLeft="@+id/goodsprice"
+            android:layout_alignStart="@+id/goodsprice"
+            android:layout_marginTop="12dp" />
+
+        <ImageView
+            android:id="@+id/line_1"
+            android:layout_width="2dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="80dp"
+            android:background="#1E000000"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="80dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/shopcartimage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/shoplist"
+            android:background="#FFFFFF"
+            android:layout_marginEnd="30dp"
+            android:layout_alignParentEnd="true"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/line_2"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="#1E000000"
+            tools:ignore="ContentDescription" />
+
+        <Button
+            android:id="@+id/moreinfo"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:gravity="center|start"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:text="@string/more_message"
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:ignore="RtlSymmetry" />
+
+        <ImageView
+            android:id="@+id/line_3"
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:background="#1E000000"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+</LinearLayout>
