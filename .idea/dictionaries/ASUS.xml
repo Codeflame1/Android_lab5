@@ -2,8 +2,11 @@
   <dictionary name="ASUS">
     <words>
       <w>dynamicaction</w>
+      <w>dynamtic</w>
+      <w>goodslist</w>
       <w>goodsmessage</w>
       <w>goodsprice</w>
+      <w>shopcartlist</w>
     </words>
   </dictionary>
 </component>

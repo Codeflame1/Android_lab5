@@ -12,13 +12,17 @@
         android:id="@+id/initial_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="25sp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/shape"
         android:gravity="center_horizontal|center_vertical"
         android:textColor="#ffffff"
-        android:background="@drawable/shape"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        app:layout_constraintLeft_toLeftOf="parent"/>
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/name_1"
@@ -26,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_toEndOf="@id/initial_1"
         android:layout_toRightOf="@id/initial_1"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:layout_marginLeft="15dp"
         app:layout_constraintLeft_toRightOf="@+id/initial_1"
         app:layout_constraintTop_toTopOf="@+id/initial_1"

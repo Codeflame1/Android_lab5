@@ -62,9 +62,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(int position){
                 Intent intent = new Intent(MainActivity.this, Detail.class);
-                intent.putExtra("name", goodslist.get(position).getName());
-                intent.putExtra("price", goodslist.get(position).getPrice());
-                intent.putExtra("message", goodslist.get(position).getMessage());
+                intent.putExtra("name", goodslist.get(position).getName())
+                      .putExtra("price", goodslist.get(position).getPrice())
+                      .putExtra("message", goodslist.get(position).getMessage());
                 startActivityForResult(intent,0);
             }
             @Override
@@ -83,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent("static_action");
         intent.putExtra("name", goodslist.get(position).getName())
               .putExtra("price", goodslist.get(position).getPrice())
+              .putExtra("message",goodslist.get(position).getMessage())
               .putExtra("image", GoodsImage.getImage(goodslist.get(position).getName()));
         sendBroadcast(intent);
 
@@ -121,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("name", shopcartlist.get(i).getName())
                       .putExtra("price", shopcartlist.get(i).getPrice())
                       .putExtra("message", shopcartlist.get(i).getMessage());
-                startActivity(intent);
+                startActivityForResult(intent,0);
             }
         });
 

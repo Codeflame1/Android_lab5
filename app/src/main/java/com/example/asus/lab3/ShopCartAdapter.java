@@ -51,7 +51,7 @@ public class ShopCartAdapter extends BaseAdapter{
         LayoutInflater inflater = LayoutInflater.from(context);
         ViewHolder viewholder;
         if (convertView == null){
-            convertView = inflater.inflate(R.layout.shop_cart, null);
+            convertView = inflater.inflate(R.layout.shopcart_list, null);
             viewholder = new ViewHolder();
             viewholder.minitial = convertView.findViewById(R.id.initial);
             viewholder.mname = convertView.findViewById(R.id.name);
@@ -60,8 +60,8 @@ public class ShopCartAdapter extends BaseAdapter{
         }    else {
             viewholder = (ViewHolder) convertView.getTag();
         }
-        viewholder.mname.setText( cartgoods.get(position).getName() );
-        viewholder.mprice.setText( cartgoods.get(position).getPrice() );
+        viewholder.mname.setText(cartgoods.get(position).getName());
+        viewholder.mprice.setText(cartgoods.get(position).getPrice());
         String first = cartgoods.get(position).getName();
         if(first.equals("购物车")){
             viewholder.minitial.setText("*");

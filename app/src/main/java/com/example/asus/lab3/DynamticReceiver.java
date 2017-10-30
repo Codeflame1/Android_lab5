@@ -9,6 +9,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
 import android.widget.Toast;
@@ -26,7 +27,8 @@ public class DynamticReceiver extends BroadcastReceiver{
                    .setContentText(bundle.getString("name")+context.getResources().getString(R.string.put_into_shopcart))
                    .setTicker(context.getResources().getString(R.string.new_message))
                    .setLargeIcon(bitmap)
-                   .setSmallIcon(R.mipmap.shoplist)
+                   .setSmallIcon(R.mipmap.shopcart)
+                   .setColor(Color.LTGRAY)
                    .setAutoCancel(true);
             intent = new Intent(context, MainActivity.class);
             PendingIntent pendingIntent = PendingIntent.getActivity(context,0,intent,PendingIntent.FLAG_UPDATE_CURRENT);
