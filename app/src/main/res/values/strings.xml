@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Lab3</string>
     <string name="more_message">更多产品信息</string>
     <string name="put_into_shopcart">已添加到购物车</string>
@@ -8,4 +8,6 @@
     <string name="confirm">确定</string>
     <string name="cancel">取消</string>
     <string name="cancel_choose">你选择了取消</string>
+    <string name="appwidget_text" tools:ignore="TypographyEllipsis">商品正在载入...</string>
+    <string name="add_widget">Add widget</string>
 </resources>
