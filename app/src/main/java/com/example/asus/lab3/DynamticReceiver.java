@@ -20,7 +20,7 @@ import android.widget.Toast;
 public class DynamticReceiver extends BroadcastReceiver{
     private static final String DYNAMICACTION = "dynamic_action";
     @Override
-    public void onReceive(Context context, Intent intent) {
+    public void onReceive(Context context, Intent intent){
         if(intent.getAction().equals(DYNAMICACTION)){
             Bundle bundle = intent.getExtras();
             Toast.makeText(context, bundle.getString("name"), Toast.LENGTH_LONG).show();
